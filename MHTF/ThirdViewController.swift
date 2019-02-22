@@ -1,26 +1,21 @@
 //
-//  AboutViewController.swift
+//  ThirdViewController.swift
 //  MHTF
 //
-//  Created by Alex Zhou on 2/16/19.
+//  Created by Alex Zhou on 2/21/19.
 //  Copyright © 2019 MHTF. All rights reserved.
 //
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class ThirdViewController: UINavigationController {
 
-    @IBOutlet weak var aboutLabel: UILabel!
-    @IBOutlet weak var aboutText: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
     }
     
-    func changeTitleForm(){
-        
-    }
 
     /*
     // MARK: - Navigation

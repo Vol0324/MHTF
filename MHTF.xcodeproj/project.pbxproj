@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461CA10D221F4E7F00430613 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CA10C221F4E7F00430613 /* AboutView.swift */; };
+		461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CA10E221F95B100430613 /* ThirdViewController.swift */; };
 		4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A1F0221600FF008E8EE3 /* AppDelegate.swift */; };
 		4654A1F3221600FF008E8EE3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A1F2221600FF008E8EE3 /* FirstViewController.swift */; };
 		4654A1F5221600FF008E8EE3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A1F4221600FF008E8EE3 /* SecondViewController.swift */; };
@@ -15,7 +17,6 @@
 		4654A1FD22160100008E8EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4654A1FB22160100008E8EE3 /* LaunchScreen.storyboard */; };
 		4654A20822160100008E8EE3 /* MHTFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A20722160100008E8EE3 /* MHTFTests.swift */; };
 		4654A21322160100008E8EE3 /* MHTFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A21222160100008E8EE3 /* MHTFUITests.swift */; };
-		46EB4A3F2218CCA20014FDFB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB4A3E2218CCA20014FDFB /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461CA10C221F4E7F00430613 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		461CA10E221F95B100430613 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4654A1ED221600FF008E8EE3 /* MHTF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHTF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654A1F0221600FF008E8EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4654A1F2221600FF008E8EE3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		4654A20E22160100008E8EE3 /* MHTFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHTFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654A21222160100008E8EE3 /* MHTFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHTFUITests.swift; sourceTree = "<group>"; };
 		4654A21422160100008E8EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46EB4A3E2218CCA20014FDFB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +107,11 @@
 				4654A1F2221600FF008E8EE3 /* FirstViewController.swift */,
 				4654A1F4221600FF008E8EE3 /* SecondViewController.swift */,
 				4654A1F6221600FF008E8EE3 /* Main.storyboard */,
+				461CA10C221F4E7F00430613 /* AboutView.swift */,
 				4654A1F922160100008E8EE3 /* Assets.xcassets */,
 				4654A1FB22160100008E8EE3 /* LaunchScreen.storyboard */,
 				4654A1FE22160100008E8EE3 /* Info.plist */,
-				46EB4A3E2218CCA20014FDFB /* AboutViewController.swift */,
+				461CA10E221F95B100430613 /* ThirdViewController.swift */,
 			);
 			path = MHTF;
 			sourceTree = "<group>";
@@ -264,8 +267,9 @@
 			files = (
 				4654A1F5221600FF008E8EE3 /* SecondViewController.swift in Sources */,
 				4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */,
-				46EB4A3F2218CCA20014FDFB /* AboutViewController.swift in Sources */,
+				461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */,
 				4654A1F3221600FF008E8EE3 /* FirstViewController.swift in Sources */,
+				461CA10D221F4E7F00430613 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,55 +48,31 @@
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
         <!--About-->
-        <scene sceneID="HvY-Y8-vUo">
+        <scene sceneID="eg9-ES-53G">
             <objects>
-                <viewController id="7hj-oE-BvK" customClass="AboutViewController" customModule="MHTF" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="umE-xr-cRq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D68-vi-EOl">
-                                <rect key="frame" x="20" y="125" width="374" height="699"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQe-3B-fov">
-                                <rect key="frame" x="20" y="69" width="114" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="PQe-3B-fov" firstAttribute="leading" secondItem="KlT-tE-IcX" secondAttribute="leading" constant="20" id="6oL-BL-Wrs"/>
-                            <constraint firstItem="D68-vi-EOl" firstAttribute="leading" secondItem="PQe-3B-fov" secondAttribute="leading" id="LQY-Bj-fvN"/>
-                            <constraint firstItem="PQe-3B-fov" firstAttribute="top" secondItem="KlT-tE-IcX" secondAttribute="top" priority="750" constant="25" id="Rlf-6k-wiP"/>
-                            <constraint firstItem="KlT-tE-IcX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PQe-3B-fov" secondAttribute="trailing" constant="163" id="Te8-1k-lwe"/>
-                            <constraint firstItem="D68-vi-EOl" firstAttribute="leading" secondItem="PQe-3B-fov" secondAttribute="leading" id="cHG-Zc-Z2I"/>
-                            <constraint firstItem="D68-vi-EOl" firstAttribute="bottom" secondItem="KlT-tE-IcX" secondAttribute="bottom" constant="11" id="gT6-xO-WDx"/>
-                            <constraint firstItem="D68-vi-EOl" firstAttribute="trailing" secondItem="umE-xr-cRq" secondAttribute="trailingMargin" id="khE-5F-g3Q"/>
-                            <constraint firstItem="D68-vi-EOl" firstAttribute="top" secondItem="PQe-3B-fov" secondAttribute="bottom" constant="8" id="zAJ-88-Bzh"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="KlT-tE-IcX"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="About" id="oYg-Fm-Yaw"/>
-                    <connections>
-                        <outlet property="AboutLabel" destination="PQe-3B-fov" id="YvK-78-WLo"/>
-                        <outlet property="aboutText" destination="D68-vi-EOl" id="Nhs-fy-VK1"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eg1-zY-ukp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PgZ-QA-Fdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="tPm-OE-vxI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="About" id="0HM-zp-Y2U"/>
+                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="-2.8985507246376816" y="819.29347826086962"/>
+            <point key="canvasLocation" x="1064" y="1007"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="htx-22-OMO">
+            <objects>
+                <navigationController id="zCe-c7-eyp" customClass="ThirdViewController" customModule="MHTF" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" id="Pfo-tj-Iuz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3e2-5h-esM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tPm-OE-vxI" kind="relationship" relationship="rootViewController" id="PSF-w2-waq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAF-1C-ScY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="991"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -147,7 +123,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="7hj-oE-BvK" kind="relationship" relationship="viewControllers" id="QCu-BR-mh1"/>
+                        <segue destination="zCe-c7-eyp" kind="relationship" relationship="viewControllers" id="clG-nI-O4Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
