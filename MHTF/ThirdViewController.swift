@@ -8,15 +8,31 @@
 
 import UIKit
 
-class ThirdViewController: UINavigationController {
-
+class ThirdViewController: UIViewController {
+    let callID : String = "text"
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "About"
+        //tabBarHiddenOnScrolling still needs to be fixed - Lecture 6
+        
+        
+//        tabBarController?.tabBar.isHidden = true
+//        navigationController?.hidesBarsOnSwipe = true
+        
+//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: callID)
+    
         // Do any additional setup after loading the view.
     }
     
-
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection :Int) -> Int {
+//        return 1
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: callID, for: indexPath)
+//        return cell
+//    }
     /*
     // MARK: - Navigation
 
