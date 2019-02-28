@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CA10E221F95B100430613 /* ThirdViewController.swift */; };
+		4627B0622227522500693EED /* ScheduleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627B0612227522500693EED /* ScheduleDetailsViewController.swift */; };
+		4628892C2224F86E004B5A44 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892B2224F86E004B5A44 /* Schedule.swift */; };
+		4628892E2224FFFE004B5A44 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */; };
 		4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A1F0221600FF008E8EE3 /* AppDelegate.swift */; };
 		4654A1F3221600FF008E8EE3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A1F2221600FF008E8EE3 /* FirstViewController.swift */; };
 		4654A1F5221600FF008E8EE3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A1F4221600FF008E8EE3 /* SecondViewController.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		461CA10E221F95B100430613 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		4627B0612227522500693EED /* ScheduleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailsViewController.swift; sourceTree = "<group>"; };
+		4628892B2224F86E004B5A44 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		4654A1ED221600FF008E8EE3 /* MHTF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHTF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654A1F0221600FF008E8EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4654A1F2221600FF008E8EE3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -107,8 +113,11 @@
 				4654A1F6221600FF008E8EE3 /* Main.storyboard */,
 				4654A1F922160100008E8EE3 /* Assets.xcassets */,
 				4654A1FB22160100008E8EE3 /* LaunchScreen.storyboard */,
+				4628892B2224F86E004B5A44 /* Schedule.swift */,
+				4627B0612227522500693EED /* ScheduleDetailsViewController.swift */,
 				4654A1FE22160100008E8EE3 /* Info.plist */,
 				461CA10E221F95B100430613 /* ThirdViewController.swift */,
+				4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */,
 			);
 			path = MHTF;
 			sourceTree = "<group>";
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4628892C2224F86E004B5A44 /* Schedule.swift in Sources */,
 				4654A1F5221600FF008E8EE3 /* SecondViewController.swift in Sources */,
+				4628892E2224FFFE004B5A44 /* ScheduleTableViewCell.swift in Sources */,
 				4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */,
 				461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */,
+				4627B0622227522500693EED /* ScheduleDetailsViewController.swift in Sources */,
 				4654A1F3221600FF008E8EE3 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
