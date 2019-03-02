@@ -12,6 +12,7 @@ struct Schedule {
     var time : String
     var category : category
     var date : String
+    //CLLocationCoordinate2D of the places
     enum category {
         case dance
         case speech

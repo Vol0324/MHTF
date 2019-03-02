@@ -130,16 +130,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="trU-Ec-vWm">
-                                            <rect key="frame" x="16" y="16" width="98" height="56"/>
+                                            <rect key="frame" x="20" y="11" width="354" height="68"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-Dp-AiH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="27.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-Dp-AiH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuc-Bv-vER">
-                                                    <rect key="frame" x="0.0" y="35.5" width="98" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="47.5" width="354" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -148,10 +148,10 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="trU-Ec-vWm" firstAttribute="top" secondItem="Pxx-Yn-n3B" secondAttribute="top" constant="16" id="9lZ-SZ-VVu"/>
-                                        <constraint firstAttribute="bottom" secondItem="trU-Ec-vWm" secondAttribute="bottom" constant="17.666666666666671" id="Wba-fC-AnQ"/>
-                                        <constraint firstItem="trU-Ec-vWm" firstAttribute="leading" secondItem="Pxx-Yn-n3B" secondAttribute="leading" constant="16" id="gUT-2a-1I7"/>
-                                        <constraint firstAttribute="trailing" secondItem="trU-Ec-vWm" secondAttribute="trailing" constant="300" id="oFK-uy-CiN"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="trU-Ec-vWm" secondAttribute="trailing" constant="20" id="Au4-We-zCn"/>
+                                        <constraint firstItem="trU-Ec-vWm" firstAttribute="leading" secondItem="Pxx-Yn-n3B" secondAttribute="leadingMargin" id="cU1-cK-gSo"/>
+                                        <constraint firstItem="trU-Ec-vWm" firstAttribute="top" secondItem="Pxx-Yn-n3B" secondAttribute="topMargin" id="gDG-S9-rfR"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="trU-Ec-vWm" secondAttribute="bottom" id="l4U-F6-lpU"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -179,13 +179,30 @@
                     <view key="view" contentMode="scaleToFill" id="kaO-2b-AI5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EVn-hC-gII">
+                                <rect key="frame" x="0.0" y="564" width="414" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EVn-hC-gII" secondAttribute="height" multiplier="138:83" id="Iao-ML-qHE"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EVn-hC-gII" firstAttribute="bottom" secondItem="Z4Q-q6-rHS" secondAttribute="bottom" id="EQe-yz-pt8"/>
+                            <constraint firstItem="EVn-hC-gII" firstAttribute="width" secondItem="kaO-2b-AI5" secondAttribute="width" id="ObD-2i-cnh"/>
+                            <constraint firstItem="Z4Q-q6-rHS" firstAttribute="bottom" secondItem="EVn-hC-gII" secondAttribute="bottom" id="TYB-ay-gh6"/>
+                            <constraint firstItem="EVn-hC-gII" firstAttribute="leading" secondItem="kaO-2b-AI5" secondAttribute="leading" id="zXZ-sC-gMi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z4Q-q6-rHS"/>
                     </view>
+                    <connections>
+                        <outlet property="mapDisplay" destination="EVn-hC-gII" id="vHP-uT-RhT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ze-7d-nDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2754" y="326"/>
+            <point key="canvasLocation" x="2752.1739130434785" y="324.77678571428572"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

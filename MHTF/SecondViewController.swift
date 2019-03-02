@@ -16,9 +16,6 @@ class SecondViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
-      
-//         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
