@@ -9,8 +9,9 @@
 import UIKit
 
 class SecondViewController: UITableViewController {
-    fileprivate var cellID : String = "ScheduleCell"
+    public var cellID : String = "ScheduleCell"
     lazy var schedules : [Schedule] = self.getSchedules()
+    var indexSegue: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,17 @@ class SecondViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ScheduleTableViewCell
             cell.nameLabel.text = schedules[indexPath.row].name
             cell.timeLabel.text = schedules[indexPath.row].time
+            indexSegue = indexPath.row
+            performSegue(withIdentifier: "showDetailSegue", sender: nil)
             return cell
+    }
+    
+    //prepare the data for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailSegue" {
+            let vc = segue.destination as! ScheduleDetailsViewController
+            vc.index = 100
+        }
     }
     
     //pull from server
@@ -39,5 +50,8 @@ class SecondViewController: UITableViewController {
         return [s1, s2, s3, s4]
     }
     
+    func getCellID() -> String{
+        return self.cellID
+    }
 }
 
