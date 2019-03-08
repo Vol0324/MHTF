@@ -10,10 +10,15 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     let callID : String = "text"
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "About"
+        navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+//        textView.scrollRangeToVisible(NSMakeRange(0, 0))
         //tabBarHiddenOnScrolling still needs to be fixed - Lecture 6
         
         
@@ -22,25 +27,12 @@ class ThirdViewController: UIViewController {
         
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: callID)
     
-        // Do any additional setup after loading the view.
     }
     
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection :Int) -> Int {
-//        return 1
-//    }
-//
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: callID, for: indexPath)
-//        return cell
-//    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        textView.setContentOffset(CGPoint.zero, animated: false)
     }
-    */
+    
 
 }

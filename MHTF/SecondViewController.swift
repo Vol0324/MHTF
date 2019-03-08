@@ -17,6 +17,8 @@ class SecondViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
+//        tableView.register(ScheduleTableViewCell.self, forCellReuseIdentifier: cellID)
+        navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,16 +30,20 @@ class SecondViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ScheduleTableViewCell
             cell.nameLabel.text = schedules[indexPath.row].name
             cell.timeLabel.text = schedules[indexPath.row].time
-            indexSegue = indexPath.row
-            performSegue(withIdentifier: "showDetailSegue", sender: nil)
+            cell.position = indexPath.row
             return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            indexSegue = indexPath.row
+            performSegue(withIdentifier: "showDetailSegue", sender: indexPath.row)
     }
     
     //prepare the data for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetailSegue" {
-            let vc = segue.destination as! ScheduleDetailsViewController
-            vc.index = 100
+            let destination = segue.destination as! ScheduleDetailsViewController
+            destination.index = sender as? Int
         }
     }
     
@@ -55,3 +61,16 @@ class SecondViewController: UITableViewController {
     }
 }
 
+extension ScheduleTableViewCell {
+    private struct temp {
+        static var index : Int = 0
+    }
+    var position: Int {
+        get {
+            return temp.index
+        }
+        set {
+            temp.index = newValue
+        }
+    }
+}

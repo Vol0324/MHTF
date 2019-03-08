@@ -12,7 +12,7 @@ import MapKit
 class ScheduleDetailsViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapDisplay: MKMapView!
     var mkViewID: String = ""
-    var index : Int!
+    var index : Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         if let indexUnwrapped = index {
