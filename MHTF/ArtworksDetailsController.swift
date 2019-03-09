@@ -15,6 +15,7 @@ class ArtworksDetailsController: UIViewController {
     //    var cellID : String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        detailTextView.textAlignment = .center
         navigationItem.largeTitleDisplayMode = .never
         print(index!)
         
@@ -36,7 +37,7 @@ class ArtworksDetailsController: UIViewController {
         let attributedString = NSMutableAttributedString(string: "\n \n before after ever shdfhalksjhdfl alskdhfalksdfh aklsdjhfalsjhdf aslkjdhfladfs lajksdhf asdlfkjhas ldfja lkshdf asdkhfalskdjhf alksjdhflasjdhfa slkdjfha lsdkjfha lsdfhja lskdjfha lsjdhfaljsfh a")
         attributedString.replaceCharacters(in: NSMakeRange(0, 0), with: attrStringWithImage)
         detailTextView.attributedText = attributedString;
-        detailTextView.textAlignment = .center
+        
         
     }
 
