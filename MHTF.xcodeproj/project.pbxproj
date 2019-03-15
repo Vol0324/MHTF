@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CA10E221F95B100430613 /* ThirdViewController.swift */; };
+		4621D9AD223BF1D800D1F5A0 /* ArtworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621D9AC223BF1D800D1F5A0 /* ArtworkTableViewCell.swift */; };
+		4621D9AF223BF1E800D1F5A0 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621D9AE223BF1E800D1F5A0 /* TextTableViewCell.swift */; };
 		4627B0622227522500693EED /* ScheduleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627B0612227522500693EED /* ScheduleDetailsViewController.swift */; };
 		4628892C2224F86E004B5A44 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892B2224F86E004B5A44 /* Schedule.swift */; };
 		4628892E2224FFFE004B5A44 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		461CA10E221F95B100430613 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		4621D9AC223BF1D800D1F5A0 /* ArtworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewCell.swift; sourceTree = "<group>"; };
+		4621D9AE223BF1E800D1F5A0 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		4627B0612227522500693EED /* ScheduleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailsViewController.swift; sourceTree = "<group>"; };
 		4628892B2224F86E004B5A44 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				4654A1F2221600FF008E8EE3 /* FirstViewController.swift */,
 				464C7BEF222F5DF500007ABC /* ArtworksDetailsController.swift */,
 				4654A1F4221600FF008E8EE3 /* SecondViewController.swift */,
+				4621D9AC223BF1D800D1F5A0 /* ArtworkTableViewCell.swift */,
+				4621D9AE223BF1E800D1F5A0 /* TextTableViewCell.swift */,
 				4654A1F6221600FF008E8EE3 /* Main.storyboard */,
 				4654A1F922160100008E8EE3 /* Assets.xcassets */,
 				4654A1FB22160100008E8EE3 /* LaunchScreen.storyboard */,
@@ -279,7 +285,9 @@
 			files = (
 				464C7BF0222F5DF500007ABC /* ArtworksDetailsController.swift in Sources */,
 				4628892C2224F86E004B5A44 /* Schedule.swift in Sources */,
+				4621D9AD223BF1D800D1F5A0 /* ArtworkTableViewCell.swift in Sources */,
 				4654A1F5221600FF008E8EE3 /* SecondViewController.swift in Sources */,
+				4621D9AF223BF1E800D1F5A0 /* TextTableViewCell.swift in Sources */,
 				4628892E2224FFFE004B5A44 /* ScheduleTableViewCell.swift in Sources */,
 				4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */,
 				461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */,
