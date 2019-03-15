@@ -9,6 +9,17 @@
 import UIKit
 
 class TextTableViewCell: UITableViewCell {
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var introdunctionText: UITextView! {
+        didSet {
+            introdunctionText.frame = self.frame
+            introdunctionText.translatesAutoresizingMaskIntoConstraints = false
+            introdunctionText.sizeToFit()
+            introdunctionText.isScrollEnabled = false
+            introdunctionText.layoutIfNeeded()
+            introdunctionText.isEditable = false
+            introdunctionText.isSelectable = false
+        }
+    }
+    
     
 }

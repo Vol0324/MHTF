@@ -11,11 +11,15 @@ import UIKit
 class ArtworksDetailsController: UITableViewController{
     var index : Int?
     var cellID : String?
+    var cellHeight : CGFloat?
     //    var cellID : String?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         navigationItem.largeTitleDisplayMode = .never
+        self.tableView.register(ArtworkTableViewCell.self, forCellReuseIdentifier: "pictureCell")
+    
+
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,21 +28,37 @@ class ArtworksDetailsController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
         -> UITableViewCell {
-            let cell : UITableViewCell
             if(indexPath.row == 0) {
                 cellID = "pictureCell"
-                cell = tableView.dequeueReusableCell(withIdentifier: cellID!, for: indexPath) as! ArtworkTableViewCell
-                cell.imageView!.image = UIImage(named: "IMG_3552")
+                let cell = tableView.dequeueReusableCell(withIdentifier: cellID!, for: indexPath) as! ArtworkTableViewCell
+                cell.mainImageView.image = UIImage(named: "IMG_3552")
+                cell.selectionStyle = UITableViewCell.SelectionStyle.none
+                return cell
             }
             else {
                 cellID = "textCell"
-                cell = tableView.dequeueReusableCell(withIdentifier: cellID!, for: indexPath) as! TextTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: cellID!, for: indexPath) as! TextTableViewCell
+                cell.selectionStyle = UITableViewCell.SelectionStyle.none
+                return cell
             }
-            
-            
-            return cell
     }
-
-
-   
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if(indexPath.row == 0) {
+            let currentImage = UIImage(named: "IMG_3552")
+            let imageCrop = currentImage?.getCropRatio()
+            return tableView.frame.width / imageCrop!
+    }
+        else {
+            return UITableView.automaticDimension
+        }
 }
+}
+
+extension UIImage {
+    func getCropRatio() -> CGFloat {
+        let widthRatio = CGFloat(self.size.width / self.size.height)
+        return widthRatio
+    }
+}
+
