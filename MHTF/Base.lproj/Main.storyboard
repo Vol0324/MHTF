@@ -215,17 +215,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="bty-iZ-Mvb">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qwo-Ml-qCE">
-                                        <rect key="frame" x="0.0" y="0.0" width="3024" height="4032"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Qwo-Ml-qCE" firstAttribute="leading" secondItem="bty-iZ-Mvb" secondAttribute="leading" id="OhZ-bJ-D6i"/>
-                                    <constraint firstItem="Qwo-Ml-qCE" firstAttribute="top" secondItem="bty-iZ-Mvb" secondAttribute="top" id="WKP-Cs-Hth"/>
-                                    <constraint firstAttribute="trailing" secondItem="Qwo-Ml-qCE" secondAttribute="trailing" id="gMu-h5-L24"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qwo-Ml-qCE" secondAttribute="bottom" id="n40-Bj-eMF"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="2GA-At-tJa" id="fWx-NR-xfX"/>
                                 </connections>
@@ -241,11 +230,6 @@
                         <viewLayoutGuide key="safeArea" id="Qi3-ah-mLk"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Qwo-Ml-qCE" id="yN3-ek-9yR"/>
-                        <outlet property="imageViewBottomConstraint" destination="n40-Bj-eMF" id="l7k-as-aXa"/>
-                        <outlet property="imageViewLeadingConstraint" destination="OhZ-bJ-D6i" id="0HN-zL-afR"/>
-                        <outlet property="imageViewTopConstraint" destination="WKP-Cs-Hth" id="JTH-lz-PF8"/>
-                        <outlet property="imageViewTrailingConstraint" destination="gMu-h5-L24" id="LOE-nw-iob"/>
                         <outlet property="scrollView" destination="bty-iZ-Mvb" id="Oyl-0S-3sh"/>
                     </connections>
                 </viewController>
@@ -367,7 +351,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="3024" height="4032"/>
         <image name="Paintbrush Regular 23pt " width="23" height="23"/>
     </resources>
 </document>

@@ -10,19 +10,20 @@ import UIKit
 
 class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
     var index : Int?
-    @IBOutlet weak var imageView: UIImageView!
+    var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
+//    @IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
+//    @IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
+//    @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
+//    @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let image = UIImage(named: String(index!))!
-        imageView.image = image
-        imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size:image.size)
-        scrollView.clipsToBounds = true
+        imageView = UIImageView(image: image)
+        imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: image.size)
+        scrollView.addSubview(imageView)
+//        scrollView.clipsToBounds = true
         scrollView.contentSize = image.size
         
         let scrollViewFrame = scrollView.frame
@@ -69,13 +70,13 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
         
         print(imageView.frame.height)
         let yOffset = max(0, (size.height - imageView.frame.height) / 2)
-        imageViewTopConstraint.constant = yOffset
-        imageViewBottomConstraint.constant = yOffset
+//        imageViewTopConstraint.constant = yOffset
+//        imageViewBottomConstraint.constant = yOffset
         contentsFrame.origin.y = yOffset
         
         let xOffset = max(0, (size.width - imageView.frame.width) / 2)
-        imageViewLeadingConstraint.constant = xOffset
-        imageViewTrailingConstraint.constant = xOffset
+//        imageViewLeadingConstraint.constant = xOffset
+//        imageViewTrailingConstraint.constant = xOffset
         contentsFrame.origin.x = xOffset
         imageView.frame = contentsFrame
         view.layoutIfNeeded()
