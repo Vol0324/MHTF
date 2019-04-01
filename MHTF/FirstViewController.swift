@@ -19,7 +19,8 @@ class FirstViewController: UICollectionViewController, UICollectionViewDelegateF
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
-        
+
+//        navigationController?.hides
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -55,8 +56,8 @@ class FirstViewController: UICollectionViewController, UICollectionViewDelegateF
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! ArtworksCollectionViewCell
-        let temp : Int = 3552 + indexPath.item
-        let tempString = "IMG_" + String(temp)
+        let temp : Int = 1 + indexPath.item
+        let tempString = String(temp)
         let image = UIImage(named: tempString)!
         cell.artworkView.image = image
         cell.backgroundColor = .white
@@ -74,6 +75,7 @@ class FirstViewController: UICollectionViewController, UICollectionViewDelegateF
             destination.index = sender as? Int
         }
     }
+    
 
 
 }

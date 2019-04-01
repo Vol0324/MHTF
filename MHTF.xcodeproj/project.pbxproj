@@ -13,6 +13,7 @@
 		4627B0622227522500693EED /* ScheduleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627B0612227522500693EED /* ScheduleDetailsViewController.swift */; };
 		4628892C2224F86E004B5A44 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892B2224F86E004B5A44 /* Schedule.swift */; };
 		4628892E2224FFFE004B5A44 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */; };
+		4643B2252251459D005E8AD7 /* ZoomedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643B2242251459D005E8AD7 /* ZoomedPhotoViewController.swift */; };
 		464C7BEE222F3F5D00007ABC /* ArtworksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C7BED222F3F5D00007ABC /* ArtworksCollectionViewCell.swift */; };
 		464C7BF0222F5DF500007ABC /* ArtworksDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C7BEF222F5DF500007ABC /* ArtworksDetailsController.swift */; };
 		4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A1F0221600FF008E8EE3 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		4627B0612227522500693EED /* ScheduleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailsViewController.swift; sourceTree = "<group>"; };
 		4628892B2224F86E004B5A44 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		4643B2242251459D005E8AD7 /* ZoomedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomedPhotoViewController.swift; sourceTree = "<group>"; };
 		464C7BED222F3F5D00007ABC /* ArtworksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworksCollectionViewCell.swift; sourceTree = "<group>"; };
 		464C7BEF222F5DF500007ABC /* ArtworksDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworksDetailsController.swift; sourceTree = "<group>"; };
 		4654A1ED221600FF008E8EE3 /* MHTF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHTF.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				4654A1F0221600FF008E8EE3 /* AppDelegate.swift */,
+				4643B2242251459D005E8AD7 /* ZoomedPhotoViewController.swift */,
 				4654A1F2221600FF008E8EE3 /* FirstViewController.swift */,
 				464C7BEF222F5DF500007ABC /* ArtworksDetailsController.swift */,
 				4654A1F4221600FF008E8EE3 /* SecondViewController.swift */,
@@ -220,13 +223,16 @@
 				TargetAttributes = {
 					4654A1EC221600FF008E8EE3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					4654A20222160100008E8EE3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 4654A1EC221600FF008E8EE3;
 					};
 					4654A20D22160100008E8EE3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 4654A1EC221600FF008E8EE3;
 					};
 				};
@@ -292,6 +298,7 @@
 				4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */,
 				461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */,
 				4627B0622227522500693EED /* ScheduleDetailsViewController.swift in Sources */,
+				4643B2252251459D005E8AD7 /* ZoomedPhotoViewController.swift in Sources */,
 				464C7BEE222F3F5D00007ABC /* ArtworksCollectionViewCell.swift in Sources */,
 				4654A1F3221600FF008E8EE3 /* FirstViewController.swift in Sources */,
 			);
@@ -477,7 +484,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,7 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -514,7 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHTF.app/MHTF";
 			};
@@ -534,7 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHTF.app/MHTF";
 			};
@@ -553,7 +560,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTFUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MHTF;
 			};
@@ -572,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTFUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MHTF;
 			};

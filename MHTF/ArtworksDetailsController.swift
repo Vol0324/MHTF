@@ -31,7 +31,7 @@ class ArtworksDetailsController: UITableViewController{
             if(indexPath.row == 0) {
                 cellID = "pictureCell"
                 let cell = tableView.dequeueReusableCell(withIdentifier: cellID!, for: indexPath) as! ArtworkTableViewCell
-                cell.mainImageView.image = UIImage(named: "IMG_3552")
+                cell.mainImageView.image = UIImage(named: String(index! + 1))
                 cell.selectionStyle = UITableViewCell.SelectionStyle.none
                 return cell
             }
@@ -45,7 +45,7 @@ class ArtworksDetailsController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(indexPath.row == 0) {
-            let currentImage = UIImage(named: "IMG_3552")
+            let currentImage = UIImage(named: String(index! + 1))
             let imageCrop = currentImage?.getCropRatio()
             return tableView.frame.width / imageCrop!
     }
@@ -53,6 +53,15 @@ class ArtworksDetailsController: UITableViewController{
             return UITableView.automaticDimension
         }
 }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        performSegue(withIdentifier: "showZoomedSegue", sender: index! + 1)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showZoomedSegue" {
+            let destination = segue.destination as! ZoomedPhotoViewController
+            destination.index = sender as? Int
+        }
+    }
 }
 
 extension UIImage {
