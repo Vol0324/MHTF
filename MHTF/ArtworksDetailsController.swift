@@ -19,7 +19,6 @@ class ArtworksDetailsController: UITableViewController{
         navigationItem.largeTitleDisplayMode = .never
         self.tableView.register(ArtworkTableViewCell.self, forCellReuseIdentifier: "pictureCell")
     
-
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,10 +57,13 @@ class ArtworksDetailsController: UITableViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showZoomedSegue" {
-            let destination = segue.destination as! ZoomedPhotoViewController
-            destination.index = sender as? Int
+            let destination = segue.destination as! UINavigationController
+            destination.indexPicture = sender as? Int
         }
     }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .default
+//    }
 }
 
 extension UIImage {
@@ -71,3 +73,18 @@ extension UIImage {
     }
 }
 
+extension UINavigationController {
+    struct Holder {
+        static var intermediate: Int?
+    }
+    var indexPicture : Int? {
+        get {
+            return Holder.intermediate
+        }
+        set {
+            Holder.intermediate = newValue
+        }
+    }
+    
+    
+}
