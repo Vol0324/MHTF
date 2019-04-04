@@ -41,7 +41,7 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         else if view.bounds.width == 375 {
-            if view.bounds.height == 724 {
+            if view.bounds.height == 812 {
                 scrollView.frame = CGRect(x: 0, y: 0, width: 375, height: 724)
             } else{
                 scrollView.frame = CGRect(x: 0, y: 0, width: 375, height: 603)
