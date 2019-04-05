@@ -18,7 +18,7 @@ class ArtworksDetailsController: UITableViewController{
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         navigationItem.largeTitleDisplayMode = .never
         self.tableView.register(ArtworkTableViewCell.self, forCellReuseIdentifier: "pictureCell")
-    
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,9 +61,6 @@ class ArtworksDetailsController: UITableViewController{
             destination.indexPicture = sender as? Int
         }
     }
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .default
-//    }
 }
 
 extension UIImage {

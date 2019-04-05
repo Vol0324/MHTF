@@ -14,6 +14,9 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
             return self.navigationController!.indexPicture
         }
     }
+    
+    lazy var viewHeight = self.navigationController!.view!.frame.height
+    
     @IBOutlet var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
@@ -28,28 +31,27 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
         imageView.frame = CGRect(x: 0, y: 0, width: image!.size.width, height: image!.size.height);
         scrollView.clipsToBounds = false
         scrollView.contentSize = imageView.frame.size
-        
         navigationController?.navigationBar.barTintColor = UIColor.clear
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.barStyle = .black
-    
-        if view.bounds.width == 414 {
-            if view.bounds.height == 896 {
-                scrollView.frame = CGRect(x: 0, y: 0, width: 414, height: 808) //
-            } else{
-                scrollView.frame = CGRect(x: 0, y: 0, width: 414, height: 672)
-            }
-        }
-        else if view.bounds.width == 375 {
-            if view.bounds.height == 812 {
-                scrollView.frame = CGRect(x: 0, y: 0, width: 375, height: 724)
-            } else{
-                scrollView.frame = CGRect(x: 0, y: 0, width: 375, height: 603)
-            }
-        }
-        else if view.bounds.width == 320, view.bounds.height == 568 {
-            scrollView.frame = CGRect(x: 0, y: 0, width: 320, height: 504)
-        }
+        //        print(view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
+//        if view.bounds.width == 414 {
+//            if view.bounds.height == 896 {
+//                scrollView.frame = CGRect(x: 0, y: 0, width: 414, height: 808) //
+//            } else{
+//                scrollView.frame = CGRect(x: 0, y: 0, width: 414, height: 672)
+//            }
+//        }
+//        else if view.bounds.width == 375 {
+//            if view.bounds.height == 812 {
+//                scrollView.frame = CGRect(x: 0, y: 0, width: 375, height: 724)
+//            } else{
+//                scrollView.frame = CGRect(x: 0, y: 0, width: 375, height: 603)
+//            }
+//        }
+//        else if view.bounds.width == 320, view.bounds.height == 568 {
+//            scrollView.frame = CGRect(x: 0, y: 0, width: 320, height: 504)
+//        }
         
     }
     
@@ -86,8 +88,10 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
         let xOffset = max(0, (size.width - imageView.frame.width) / 2)
         imageViewLeadingConstraint.constant = xOffset
         imageViewTrailingConstraint.constant = xOffset
-        print(scrollView.frame)
         view.layoutIfNeeded()
+        if(yOffset != 0) {
+        imageView.center = CGPoint(x: imageView.center.x, y: view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
+        }
         
     }
     
@@ -100,4 +104,5 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
 //    }
 
 }
+
 
