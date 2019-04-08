@@ -18,6 +18,7 @@ class ArtworksDetailsController: UITableViewController{
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         navigationItem.largeTitleDisplayMode = .never
         self.tableView.register(ArtworkTableViewCell.self, forCellReuseIdentifier: "pictureCell")
+    
         
     }
     
@@ -38,6 +39,26 @@ class ArtworksDetailsController: UITableViewController{
                 cellID = "textCell"
                 let cell = tableView.dequeueReusableCell(withIdentifier: cellID!, for: indexPath) as! TextTableViewCell
                 cell.selectionStyle = UITableViewCell.SelectionStyle.none
+                
+                let title = ArtworkInfoModel.content[3 * index!]
+                let author = ArtworkInfoModel.content[3 * index! + 1]
+                let content = ArtworkInfoModel.content[3 * index! + 2]
+                let setparagraphStyle = NSMutableParagraphStyle()
+                setparagraphStyle.alignment = .left
+                var attributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .title1), .paragraphStyle : setparagraphStyle]
+                let attributedText = NSMutableAttributedString(string: title!, attributes: attributes)
+                attributedText.append(NSAttributedString(string: "\n", attributes: attributes))
+                let setparagraphStyle2 = NSMutableParagraphStyle()
+                setparagraphStyle2.alignment = .right
+                attributes = [.font: UIFont.preferredFont(forTextStyle: .title2), .paragraphStyle : setparagraphStyle2]
+                attributedText.append(NSMutableAttributedString(string: "By \(author!)", attributes: attributes))
+                attributedText.append(NSAttributedString(string: "\n\n", attributes: [.font: UIFont.systemFont(ofSize: 5)]))
+                let setparagraphStyle3 = NSMutableParagraphStyle()
+                setparagraphStyle3.alignment = .justified
+                attributes = [.font: UIFont.preferredFont(forTextStyle: .body), .paragraphStyle : setparagraphStyle3]
+                attributedText.append(NSMutableAttributedString(string: content!, attributes: attributes))
+                
+                cell.introdunctionText.attributedText = attributedText
                 return cell
             }
     }

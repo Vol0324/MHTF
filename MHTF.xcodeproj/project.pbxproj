@@ -24,6 +24,7 @@
 		4654A1FD22160100008E8EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4654A1FB22160100008E8EE3 /* LaunchScreen.storyboard */; };
 		4654A20822160100008E8EE3 /* MHTFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A20722160100008E8EE3 /* MHTFTests.swift */; };
 		4654A21322160100008E8EE3 /* MHTFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A21222160100008E8EE3 /* MHTFUITests.swift */; };
+		46FE58EB225B06CC000022BB /* ArtworkInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FE58EA225B06CC000022BB /* ArtworkInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		4654A20E22160100008E8EE3 /* MHTFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHTFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654A21222160100008E8EE3 /* MHTFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHTFUITests.swift; sourceTree = "<group>"; };
 		4654A21422160100008E8EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FE58EA225B06CC000022BB /* ArtworkInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				4643B2242251459D005E8AD7 /* ZoomedPhotoViewController.swift */,
 				4654A1F2221600FF008E8EE3 /* FirstViewController.swift */,
 				464C7BEF222F5DF500007ABC /* ArtworksDetailsController.swift */,
+				46FE58EA225B06CC000022BB /* ArtworkInfoModel.swift */,
 				4654A1F4221600FF008E8EE3 /* SecondViewController.swift */,
 				4621D9AC223BF1D800D1F5A0 /* ArtworkTableViewCell.swift */,
 				4621D9AE223BF1E800D1F5A0 /* TextTableViewCell.swift */,
@@ -291,6 +294,7 @@
 			files = (
 				464C7BF0222F5DF500007ABC /* ArtworksDetailsController.swift in Sources */,
 				4628892C2224F86E004B5A44 /* Schedule.swift in Sources */,
+				46FE58EB225B06CC000022BB /* ArtworkInfoModel.swift in Sources */,
 				4621D9AD223BF1D800D1F5A0 /* ArtworkTableViewCell.swift in Sources */,
 				4654A1F5221600FF008E8EE3 /* SecondViewController.swift in Sources */,
 				4621D9AF223BF1E800D1F5A0 /* TextTableViewCell.swift in Sources */,

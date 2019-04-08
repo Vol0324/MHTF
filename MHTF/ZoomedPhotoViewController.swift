@@ -34,6 +34,7 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
         navigationController?.navigationBar.barTintColor = UIColor.clear
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.barStyle = .black
+    
         //        print(view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
 //        if view.bounds.width == 414 {
 //            if view.bounds.height == 896 {
@@ -90,8 +91,9 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
         imageViewTrailingConstraint.constant = xOffset
         view.layoutIfNeeded()
         if(yOffset != 0) {
-        imageView.center = CGPoint(x: imageView.center.x, y: view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
+        imageView.center = CGPoint(x: view.frame.width / 2, y: view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
         }
+        print(imageView.center)
         
     }
     

@@ -14,7 +14,7 @@
         <scene sceneID="htx-22-OMO">
             <objects>
                 <navigationController id="zCe-c7-eyp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" id="Pfo-tj-Iuz"/>
+                    <tabBarItem key="tabBarItem" title="About" image="notebook" landscapeImage="notebook_compact" selectedImage="notebook" id="Pfo-tj-Iuz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="3e2-5h-esM">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -66,7 +66,7 @@
         <scene sceneID="8cE-Rc-9eE">
             <objects>
                 <navigationController id="dmO-gM-FjM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="kdc-a6-sbK"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="CalendarIcon" landscapeImage="calendar_compact" selectedImage="CalendarIcon" id="kdc-a6-sbK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="P7i-iG-2Wd">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -83,7 +83,7 @@
         <scene sceneID="3BL-Bn-HgN">
             <objects>
                 <navigationController id="dax-dB-YYP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Artworks" image="Paintbrush Regular 23pt " selectedImage="Paintbrush Regular 23pt " id="x06-7x-QKh"/>
+                    <tabBarItem key="tabBarItem" title="Artworks" image="ArtIcon" landscapeImage="ArtIcon_Compact" selectedImage="ArtIcon" id="x06-7x-QKh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="muC-FH-1ma">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -176,18 +176,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y00-QK-8zC">
-                                            <rect key="frame" x="0.0" y="10" width="375" height="154.66666666666666"/>
+                                            <rect key="frame" x="10" y="20" width="355" height="134.66666666666666"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="y00-QK-8zC" firstAttribute="leading" secondItem="lVV-ck-Joe" secondAttribute="leading" id="BRV-cQ-Zy6"/>
-                                        <constraint firstAttribute="bottom" secondItem="y00-QK-8zC" secondAttribute="bottom" constant="10" id="Uxd-oj-JVu"/>
-                                        <constraint firstAttribute="trailing" secondItem="y00-QK-8zC" secondAttribute="trailing" id="hqL-fV-mWc"/>
-                                        <constraint firstItem="y00-QK-8zC" firstAttribute="top" secondItem="lVV-ck-Joe" secondAttribute="top" constant="10" id="iUn-Ii-QT2"/>
+                                        <constraint firstItem="y00-QK-8zC" firstAttribute="centerY" secondItem="lVV-ck-Joe" secondAttribute="centerY" id="7Bl-AF-Tws"/>
+                                        <constraint firstItem="y00-QK-8zC" firstAttribute="top" secondItem="lVV-ck-Joe" secondAttribute="top" constant="20" id="7Ls-5D-KDh"/>
+                                        <constraint firstItem="y00-QK-8zC" firstAttribute="leading" secondItem="lVV-ck-Joe" secondAttribute="leading" constant="10" id="BRV-cQ-Zy6"/>
+                                        <constraint firstItem="y00-QK-8zC" firstAttribute="centerX" secondItem="lVV-ck-Joe" secondAttribute="centerX" id="GtX-u6-maL"/>
+                                        <constraint firstAttribute="trailing" secondItem="y00-QK-8zC" secondAttribute="trailing" constant="10" id="hqL-fV-mWc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -401,7 +402,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="3024" height="4032"/>
-        <image name="Paintbrush Regular 23pt " width="23" height="23"/>
+        <image name="1" width="4734" height="3156"/>
+        <image name="ArtIcon" width="23" height="23"/>
+        <image name="ArtIcon_Compact" width="17" height="17"/>
+        <image name="CalendarIcon" width="23" height="23"/>
+        <image name="calendar_compact" width="17" height="17"/>
+        <image name="notebook" width="17.666666030883789" height="23"/>
+        <image name="notebook_compact" width="13" height="17"/>
     </resources>
 </document>
