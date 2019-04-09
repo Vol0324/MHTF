@@ -13,6 +13,7 @@
 		4627B0622227522500693EED /* ScheduleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627B0612227522500693EED /* ScheduleDetailsViewController.swift */; };
 		4628892C2224F86E004B5A44 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892B2224F86E004B5A44 /* Schedule.swift */; };
 		4628892E2224FFFE004B5A44 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */; };
+		4628D255225B98C3008F09ED /* EventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628D254225B98C3008F09ED /* EventDetails.swift */; };
 		4643B2252251459D005E8AD7 /* ZoomedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643B2242251459D005E8AD7 /* ZoomedPhotoViewController.swift */; };
 		464C7BEE222F3F5D00007ABC /* ArtworksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C7BED222F3F5D00007ABC /* ArtworksCollectionViewCell.swift */; };
 		464C7BF0222F5DF500007ABC /* ArtworksDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C7BEF222F5DF500007ABC /* ArtworksDetailsController.swift */; };
@@ -24,6 +25,7 @@
 		4654A1FD22160100008E8EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4654A1FB22160100008E8EE3 /* LaunchScreen.storyboard */; };
 		4654A20822160100008E8EE3 /* MHTFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A20722160100008E8EE3 /* MHTFTests.swift */; };
 		4654A21322160100008E8EE3 /* MHTFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654A21222160100008E8EE3 /* MHTFUITests.swift */; };
+		46CD3D1B225C46F10096E42B /* AboutInformationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD3D1A225C46F10096E42B /* AboutInformationTab.swift */; };
 		46FE58EB225B06CC000022BB /* ArtworkInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FE58EA225B06CC000022BB /* ArtworkInfoModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,7 @@
 		4627B0612227522500693EED /* ScheduleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailsViewController.swift; sourceTree = "<group>"; };
 		4628892B2224F86E004B5A44 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		4628D254225B98C3008F09ED /* EventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetails.swift; sourceTree = "<group>"; };
 		4643B2242251459D005E8AD7 /* ZoomedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomedPhotoViewController.swift; sourceTree = "<group>"; };
 		464C7BED222F3F5D00007ABC /* ArtworksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworksCollectionViewCell.swift; sourceTree = "<group>"; };
 		464C7BEF222F5DF500007ABC /* ArtworksDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworksDetailsController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		4654A20E22160100008E8EE3 /* MHTFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHTFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654A21222160100008E8EE3 /* MHTFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHTFUITests.swift; sourceTree = "<group>"; };
 		4654A21422160100008E8EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CD3D1A225C46F10096E42B /* AboutInformationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInformationTab.swift; sourceTree = "<group>"; };
 		46FE58EA225B06CC000022BB /* ArtworkInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,11 +135,13 @@
 				4654A1F922160100008E8EE3 /* Assets.xcassets */,
 				4654A1FB22160100008E8EE3 /* LaunchScreen.storyboard */,
 				4628892B2224F86E004B5A44 /* Schedule.swift */,
+				4628D254225B98C3008F09ED /* EventDetails.swift */,
 				4627B0612227522500693EED /* ScheduleDetailsViewController.swift */,
 				4654A1FE22160100008E8EE3 /* Info.plist */,
 				461CA10E221F95B100430613 /* ThirdViewController.swift */,
 				4628892D2224FFFE004B5A44 /* ScheduleTableViewCell.swift */,
 				464C7BED222F3F5D00007ABC /* ArtworksCollectionViewCell.swift */,
+				46CD3D1A225C46F10096E42B /* AboutInformationTab.swift */,
 			);
 			path = MHTF;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				464C7BF0222F5DF500007ABC /* ArtworksDetailsController.swift in Sources */,
+				46CD3D1B225C46F10096E42B /* AboutInformationTab.swift in Sources */,
 				4628892C2224F86E004B5A44 /* Schedule.swift in Sources */,
 				46FE58EB225B06CC000022BB /* ArtworkInfoModel.swift in Sources */,
 				4621D9AD223BF1D800D1F5A0 /* ArtworkTableViewCell.swift in Sources */,
@@ -301,6 +308,7 @@
 				4628892E2224FFFE004B5A44 /* ScheduleTableViewCell.swift in Sources */,
 				4654A1F1221600FF008E8EE3 /* AppDelegate.swift in Sources */,
 				461CA10F221F95B100430613 /* ThirdViewController.swift in Sources */,
+				4628D255225B98C3008F09ED /* EventDetails.swift in Sources */,
 				4627B0622227522500693EED /* ScheduleDetailsViewController.swift in Sources */,
 				4643B2252251459D005E8AD7 /* ZoomedPhotoViewController.swift in Sources */,
 				464C7BEE222F3F5D00007ABC /* ArtworksCollectionViewCell.swift in Sources */,
@@ -391,7 +399,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuhao  Zhou (9VW3GX78KY)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -414,6 +423,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -452,7 +462,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yuhao  Zhou (D43B3BLL26)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -468,6 +479,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -479,15 +491,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = D43B3BLL26;
 				INFOPLIST_FILE = MHTF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTF;
+				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTF.MHAW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MHAWCompanionDevelopmentProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -497,15 +510,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = D43B3BLL26;
 				INFOPLIST_FILE = MHTF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTF;
+				PRODUCT_BUNDLE_IDENTIFIER = UNCSG.MHTF.MHAW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MHAWCompanionDistributionProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

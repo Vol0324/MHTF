@@ -10,19 +10,23 @@
 struct Schedule {
     var name : String
     var time : String
-    var category : category
     var date : String
+    var location : String
+    var longitude : Double
+    var latitude : Double
+//    var location2 : String
     //CLLocationCoordinate2D of the places
-    enum category {
-        case dance
-        case speech
-        case art
-    }
     
-    init (name : String, time : String, category : Schedule.category, date : String) {
+    
+    init (name : String, time : String, date : String, location: String, latitude: Double, longitude: Double) {
         self.name = name
         self.time = time
-        self.category = category
         self.date = date
+        self.location = location
+//        self.location2 = location2
+        self.longitude = longitude
+        self.latitude = latitude
     }
+
+    
 }

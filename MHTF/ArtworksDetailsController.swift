@@ -104,5 +104,14 @@ extension UINavigationController {
         }
     }
     
+    var index : Int? {
+        get {
+             return Holder.intermediate
+        }
+        set {
+            Holder.intermediate = newValue
+        }
+    }
+    
     
 }
