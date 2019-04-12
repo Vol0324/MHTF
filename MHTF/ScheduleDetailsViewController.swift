@@ -48,7 +48,7 @@ class ScheduleDetailsViewController: UIViewController, MKMapViewDelegate, EKEven
         attributedText.append(NSMutableAttributedString(string: time, attributes: attributes))
         attributedText.append(NSAttributedString(string: "\n\n", attributes: [.font: UIFont.systemFont(ofSize: 10)]))
         let setparagraphStyle3 = NSMutableParagraphStyle()
-        setparagraphStyle3.alignment = .justified
+        setparagraphStyle3.alignment = .left
         attributes = [.font: UIFont.preferredFont(forTextStyle: .body), .paragraphStyle : setparagraphStyle3]
         attributedText.append(NSMutableAttributedString(string: content, attributes: attributes))
         textView.attributedText = attributedText
@@ -61,7 +61,7 @@ class ScheduleDetailsViewController: UIViewController, MKMapViewDelegate, EKEven
     
     @IBAction func addEvent(_ sender: Any) {
         let eventStore = EKEventStore()
-        let contact = CNContactStore()
+//        let contact = CNContactStore()
     
         if EKEventStore.authorizationStatus(for: .event) != .authorized {
             eventStore.requestAccess(to: .event, completion: {granted, error in
@@ -69,15 +69,15 @@ class ScheduleDetailsViewController: UIViewController, MKMapViewDelegate, EKEven
                  HelperMethodClass.showAlertMessage(message: "It is recommended to do so before continuing.", viewController: self)
                 }
                 })
-            contact.requestAccess(for: .contacts, completionHandler: {granted, error in
-                if(!granted) {
-                    if(EKEventStore.authorizationStatus(for: .event) != .authorized) {
-                        return
-                    }
-                     HelperMethodClass.showAlertMessage(message: "It is recommended to do so before continuing.", viewController: self)
-
-                }
-            })
+//            contact.requestAccess(for: .contacts, completionHandler: {granted, error in
+//                if(!granted) {
+//                    if(EKEventStore.authorizationStatus(for: .event) != .authorized) {
+//                        return
+//                    }
+//                     HelperMethodClass.showAlertMessage(message: "It is recommended to do so before continuing.", viewController: self)
+//
+//                }
+//            })
             
         } else {
             let date = EventDetails.date[index!]!
@@ -101,18 +101,18 @@ class ScheduleDetailsViewController: UIViewController, MKMapViewDelegate, EKEven
         event.location = eventSchedule.location
         event.calendar = eventStore.defaultCalendarForNewEvents
         
-        let controller = EKEventEditViewController()
-        controller.event = event
-        controller.eventStore = eventStore
-        controller.editViewDelegate = self
-        present(controller, animated: true)
+//        let controller = EKEventEditViewController()
+//        controller.event = event
+//        controller.eventStore = eventStore
+//        controller.editViewDelegate = self
+//        present(controller, animated: true)
 //        print(event.startDate)
         do {
             try eventStore.save(event, span: .thisEvent)
         } catch {
             print("\(error)")
         }
-//         HelperMethodClass.showSuccessMessage(message: "", viewController: self)
+         HelperMethodClass.showSuccessMessage(message: "", viewController: self)
     }
   
     
@@ -180,7 +180,7 @@ class HelperMethodClass: NSObject {
     
     class func showAlertMessage(message: String, viewController: UIViewController) {
         DispatchQueue.main.async {
-            let alertMessage = UIAlertController(title: "Please turn on Calendar and Contacts permission in the Settings app", message: message, preferredStyle: .alert)
+            let alertMessage = UIAlertController(title: "Please turn on Calendar permission in the Settings app", message: message, preferredStyle: .alert)
             
             let cancelAction = UIAlertAction(title: "OK", style: .cancel)
             

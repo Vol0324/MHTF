@@ -14,7 +14,7 @@ struct EventDetails {
                          2: Schedule(name: "Doggies and Dialogue", time: "11:30 AM", date: "Tuesday, April 9th", location : "The Pit", latitude: 35.910158, longitude: -79.048583),
                          3: Schedule(name: "Student Recreation Center (SRC) Tabling", time: "12:00 PM - 3:00 PM", date: "Friday, April 12th", location : "SRC", latitude: 35.909261, longitude: -79.047498),
                          4: Schedule(name: "Mental Health and the Arts", time: "6:00 PM - 8:00 PM", date: "Friday, April 12th", location: "Campus Y Anne Queen Lounge", latitude: 35.911368, longitude: -79.051216),
-                         5: Schedule(name: "NEDA walk (in Raleigh)", time: "10:00 AM - 12:00 PM", date: "Saturday, April 13th", location: "520 Ashe Ave, Raleigh", latitude: 35.779313, longitude : -78.663028)]
+                         5: Schedule(name: "NEDA walk (in Raleigh)", time: "10:00 AM - 12:00 PM", date: "Sunday, April 14th", location: "520 Ashe Ave, Raleigh", latitude: 35.779313, longitude : -78.663028)]
     
     static let details = [0: "Many of the Mental Health Coalition’s organizations will be in the pit from 11:00 AM to 1:00 PM, so come out and meet the compassionate and dedicated students who make their work possible! UNC has so many wonderful organizations, but we need to increase visibility and we want to let the student body know we as organizations are here for them. All of these groups are also knowledgeable about university resources, so please come see us!",
                           1: "Helping Give Away Psychological Science (HGAPS) is putting on this informative panel at 5:30 PM in Davie 112. Come listen to passionate mental health professionals talk about their careers, and enjoy some pizza on us!",
@@ -28,5 +28,5 @@ struct EventDetails {
                          2: ("2019-04-09T11:30:00-0400", "2019-04-09T12:30:00-0400"),
                          3: ("2019-04-12T12:00:00-0400", "2019-04-12T15:00:00-0400"),
                          4: ("2019-04-12T18:00:00-0400", "2019-04-12T20:00:00-0400"),
-                         5: ("2019-04-13T10:00:00-0400", "2019-04-13T12:00:00-0400")]
+                         5: ("2019-04-14T10:00:00-0400", "2019-04-14T12:00:00-0400")]
 }

@@ -34,7 +34,7 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
         navigationController?.navigationBar.barTintColor = UIColor.clear
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.barStyle = .black
-    
+        imageView.isUserInteractionEnabled = true
         //        print(view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
 //        if view.bounds.width == 414 {
 //            if view.bounds.height == 896 {
@@ -77,7 +77,7 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        updateConstraintsForSize(scrollView.bounds.size)
+        updateConstraintsForSize(getDesiredSize())
     }
     
     fileprivate func updateConstraintsForSize(_ size: CGSize) {
@@ -90,11 +90,18 @@ class ZoomedPhotoViewController: UIViewController, UIScrollViewDelegate {
         imageViewLeadingConstraint.constant = xOffset
         imageViewTrailingConstraint.constant = xOffset
         view.layoutIfNeeded()
-        if(yOffset != 0) {
-        imageView.center = CGPoint(x: view.frame.width / 2, y: view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
-        }
-        print(imageView.center)
+//        imageView.center = CGPoint(x: imageView.center.x, y : 318)
+//        print(scrollView.frame)
+//        print(imageView.frame)
+//        imageView.center = CGPoint(x: view.frame.width / 2, y: view.frame.height / 2 - (viewHeight - view!.frame.height) / 2)
         
+    }
+    
+    func getDesiredSize() -> CGSize {
+        var toUpdateSize = view.bounds.size
+        let controllerSize = self.navigationController!.navigationBar.bounds.size
+        toUpdateSize = CGSize(width: view.bounds.width, height: view.bounds.height - controllerSize.height)
+        return toUpdateSize
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
