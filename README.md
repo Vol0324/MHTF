@@ -3,7 +3,6 @@ The MHAW Companion app has gracefully concluded its journey on the App Store, an
 <br/>
 <img src="https://github.com/Vol0324/MHTF/blob/master/App%20Screenshots/IMG_7950.PNG" alt="drawing" width="200"/>
 <img src="https://github.com/Vol0324/MHTF/blob/master/App%20Screenshots/IMG_7953.PNG" alt="drawing" width="200"/>
-<!-- <img src="https://github.com/Vol0324/MHTF/blob/master/App%20Screenshots/IMG_4028.PNG" alt="drawing" width="200"/> -->
 <img src="https://github.com/Vol0324/MHTF/blob/master/App%20Screenshots/IMG_4029.PNG" alt="drawing" width="200"/>
 <img src="https://github.com/Vol0324/MHTF/blob/master/App%20Screenshots/IMG_4030.PNG" alt="drawing" width="200"/>
 <img src="https://github.com/Vol0324/MHTF/blob/master/App%20Screenshots/IMG_4031.PNG" alt="drawing" width="200"/>
